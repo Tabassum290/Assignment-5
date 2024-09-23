@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +7,62 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="collapse collapse-arrow bg-base-200">
+<body class="container">
+  <main>
+    <section class="sticky top-0 z-120 bg-[#F9F7F3]">
+        <div class="navbar">
+            <div class="navbar start">
+                <button id="home-btn" onclick="goBack()" class="btn px-6 bg-[#B4F461] font-bold">Home</button>
+    </div>
+            <div class="navbar-center lg:p-4 w-1/3 text-[16px] lg:text-xl font-bold items-center">
+                <img class="lg:px-2 px-0 " src="./assets/logo.png" alt="">
+               <h1 class="invisible lg:visible" >Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end">
+              <button class="btn text-[#111111B3] font-bold">
+               <img src="./assets/coin.png" alt="">
+               <span>$$$</span>
+               BDT
+              </button>
+            </div>
+            </div>
+   <!-- Navbar End -->
+ 
+</section>
+  <section class="lg:w-3/4 w-full lg:mx-auto">
+  <div>
+    <h1 class="text-4xl font-bold text-green-600 my-4">Important Questions : </h1>
+    <div class="collapse collapse-arrow bg-base-200 my-2">
         <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p class="font-semibold">The Document Object Model (DOM) is a way to represent a webpage as a tree of objects. It allows JavaScript to interact with HTML elements, so we can change content, styles, or structure dynamically without reloading the page.</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <div class="collapse collapse-arrow bg-base-200 my-2">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p class="font-semibold">To select an element from DOM , we use some JavaScript methods . There are five common types of methods . They are document.getElementById(), document.getElementsByClassName(), document.getElementsByTagName(), document.querySelector(),document.querySelectorAll()</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <div class="collapse collapse-arrow bg-base-200 my-2">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p class="font-semibold">Event delegation is a technique in the DOM where a single event listener is added to a parent element, and that listener can handle events triggered by its child elements.</p>
         </div>
       </div>
+      <div class="collapse collapse-arrow bg-base-200 my-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p class="font-semibold">
+            To manipulate an element's attributes and styles using the DOM, we can use methods like getAttribute, setAttribute, and removeAttribute to read or change attributes. For styles, we can modify the style property to change inline CSS or use classList to add, remove, or toggle CSS classes. </p>
+        </div>
+      </div>
+    </section> 
+</main>
+<script src="./app.js"></script>
 </body>
 </html>
