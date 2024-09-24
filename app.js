@@ -56,9 +56,7 @@ return;
 }
 
 const newBalance = accountBalance + addMoney;
-
         document.getElementById('total-money').innerText = newBalance;
-
         const availabaleTotalMoney = parseFloat(availableMoney.innerText);
 const currentMoney = availabaleTotalMoney - newBalance;
  availableMoney.innerText = currentMoney;
@@ -89,7 +87,7 @@ return;
 
 const newBalance = accountBalance + addMoney;
 
-        document.getElementById('total-money').innerText = newBalance;
+        document.getElementById('total-money-feni').innerText = newBalance;
 
         const availabaleTotalMoney = parseFloat(availableMoney.innerText);
 const currentMoney = availabaleTotalMoney - newBalance;
@@ -128,7 +126,6 @@ return;
 const currentMoney = availbaleTotalMoney - newBalance;
  availableMoney.innerText = currentMoney;
 
-// history
 // history
 defaultText.classList.add('hidden');
 const donateTitle3 = document.getElementById('donate-aid').innerText;
