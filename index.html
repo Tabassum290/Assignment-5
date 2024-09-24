@@ -130,7 +130,7 @@
          <p class="my-4 font-semibold text-[#111111B3] lg:w-full w-3/4">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
          <input id="input-money-quota" class="lg:w-full w-3/4 p-4 font-semibold rounded-lg" type="number" placeholder="Write Donation Amount">
          <button id="donate-btn-aid" onclick="my_modal_3.showModal()" class="btn lg:w-full w-3/4 my-4 px-6 bg-[#B4F461] font-bold border-1 text-xl">Donate Now</button>
-         <dialog id="my_modal_3" class="modal hidden">
+         <dialog id="my_modal_3" class="modal ">
           <div class="modal-box flex-row">
             <h3 class="text-3xl font-bold text-center">Congrats!</h3>
             
@@ -152,8 +152,8 @@
 <!-- History Section -->
 <section id="show-history" class="hidden">
   <h1 class="text-3xl font-bold my-4 text-center text-blue-700">Transaction History</h1>
-    <div class="w-full my-4 border-2 p-4 rounded-lg lg:mx-auto mx-[10px] lg:w-3/4">
-      <h1 id="change-text" class="text-xl font-bold my-4 uppercase">No transaction done yet</h1>
+    <div id="change-text" class="w-full my-4 border-2 p-4 rounded-lg lg:mx-auto mx-[10px] lg:w-3/4">
+      <h1 id="default-text" class="text-xl font-bold my-4 uppercase">No transaction done yet</h1>
   </div>
 </section>
 </main>
